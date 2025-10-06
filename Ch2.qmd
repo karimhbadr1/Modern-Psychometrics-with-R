@@ -59,5 +59,26 @@ tail(round(eigen(Rmot1$rho)$values,3))
 Rmot<-tetrachoric(Rmotivation1)
 tail(round(eigen(Rmot$rho)$values,3))
 ```
+```{r}
+Rmot$rho
+```
+```{r}
+motFA<-fa(Rmot$rho,nfactors = 2,rotate = "none",fm="ml")
+```
+```{r}
+print(motFA$loadings,cutoff = 0.2)
+```
 
- x
+```{r}
+motFA$loadings
+```
+ 
+```{r}
+motFA$loadings[,c(1,2)]
+```
+ 
+```{r}
+round(motFA$communality,2)
+```
+ 
+ 
