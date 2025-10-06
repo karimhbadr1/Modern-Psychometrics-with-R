@@ -60,4 +60,4 @@ Rmot<-tetrachoric(Rmotivation1)
 tail(round(eigen(Rmot$rho)$values,3))
 ```
 
- 
+ x
